@@ -1,0 +1,230 @@
+body{
+	background-color: white;
+	font-family: 'Lato', 'Gill Sans', 'Gill Sans MT', 'Calibri', sans-serif;
+	color: #555;
+	line-height: 150%;
+	font-size: 16px;
+}
+
+a:hover, h2, nav a {
+	color: #0283ab; /* Theme color */
+}
+
+nav a {
+	background-color: transparent;
+	border: 1px solid #0283ab; /* Theme color */
+}
+
+nav a:hover, th {
+	background-color: #0283ab; /* Theme color */
+	color: white;
+}
+
+a {
+	color:#555;
+	text-decoration: none;
+}
+
+h2 {
+	margin: 0px;
+	margin-top: 5px;
+	font-size:22px;
+	line-height: 100%;
+	text-align:left;
+}
+
+h1, h2, summary {
+	font-weight:bold;
+}
+
+summary {
+	margin-left: 12px;
+	margin-bottom: 12px;
+}
+
+
+header h1 {
+	color:black;
+	font-weight: bolder;
+}
+
+p {
+	margin-top: 0.5em;
+}
+
+nav a {
+	font-size: 12px;
+	padding: 4px 8px;
+}
+
+header h1 {
+	position: relative;
+	text-align: center;
+	font-size: 50px;
+}
+
+header hr {
+	width: 120px;
+	border-color: grey;
+}
+
+header, section {
+	max-width: 1125px;
+	margin: auto;
+}
+
+header {
+	padding-top: 10px;
+}
+
+article {
+	height:auto;
+	min-height: 180px;
+	width:530px;
+	display: inline-block;
+	margin-right: 12px;
+	margin-left: 12px;
+	text-align: justify;
+	margin-bottom: 15px;
+	vertical-align: top;
+}
+
+.noimg {
+	min-height: 0px;
+}
+
+.noimg h2 {
+	margin-top: 0px;
+	font-size:18px;
+	line-height: 110%;
+}
+
+.logo {
+	width: 22px;
+	position: relative;
+	top: 4px;
+}
+
+article > img {
+	height : 170px;
+	width: 200px;
+	margin-right:20px;
+	float: left;
+	border-radius: 10px;
+	border-style: solid;
+	border-width: 1px;
+	border-color: lightgray;
+}
+
+table {
+	border-collapse: collapse;
+	width: 100%;
+}
+
+
+tr:nth-child(odd){
+	background-color: #f2f2f2
+}
+
+th, td {
+	text-align: left;
+	padding: 10px;
+}
+
+@media screen and (max-width: 1200px) {
+	section, header {
+		width: 550px;
+	}
+}
+
+@media (max-width: 750px) {
+	nav a {font-size:24px;}
+	nav {margin-top:20px;}
+}
+
+@media screen and (max-width: 630px) {
+	article {
+		width:auto;
+		height: auto;
+		min-height: unset;
+		margin-bottom: 5px;
+	}
+	section, header {
+		width:auto;
+	}
+
+	article > img {
+		width: auto;
+		height: 100px;
+		border-radius: 5px;
+	}
+
+	.logo {
+		width:16px;
+		top: 2px;
+	}
+
+	h2 {
+		margin-top: 0px;
+	}
+
+	p {
+		margin-top: 0.0em;
+		font-size: 14px;
+		line-height: 140%;
+	}
+
+}
+
+@media (prefers-color-scheme: dark) {
+	body{
+		background-color: black;
+		color: #AAA;
+	}
+
+	nav a:hover {
+		color: black;
+	}
+
+	a {
+		color:#AAA;
+	}
+
+	header h1 {
+		color:white;
+	}
+
+	article > img {
+		border-color: #444;
+	}
+
+	tr:nth-child(odd){
+		background-color: #0F0F0F;
+	}
+
+}
+
+
+/* latin */
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 400;
+  src:	local('Lato Regular'), 
+  		local('Lato-Regular'), 
+  		url('http://simonrodriguez.fr/fonts/Lato/Lato-Regular.ttf') format('truetype'),
+		url(https://fonts.gstatic.com/s/lato/v14/S6uyw4BMUTPHjx4wXiWtFCc.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+/* latin-ext */
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 400;
+  src:	local('Lato Regular'), 
+		local('Lato-Regular'), 
+		url('http://simonrodriguez.fr/fonts/Lato/Lato-Regular.ttf') format('truetype'),
+		url(https://fonts.gstatic.com/s/lato/v14/S6uyw4BMUTPHjxAwXiWtFCfQ7A.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}

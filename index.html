@@ -1,1 +1,132 @@
-"Hello World"
+
+<html>
+	<head>
+		<title>Theo Thonat</title>
+    	<meta charset="utf-8"/>
+    	<meta name="viewport" content="width=480">
+		<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+		<link rel="icon" type="image/png" href="icons/favicon-32x32.png" sizes="32x32">
+		<link rel="icon" type="image/png" href="icons/favicon-16x16.png" sizes="16x16">
+		<link rel="manifest" href="/manifest.json">
+		<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#333">
+		<meta name="theme-color" content="#ffffff">
+		<link rel="stylesheet" href="style/style.css" title="CSS Style" type="text/css" media="screen" charset="utf-8">
+	</head>
+	<body>
+
+	<header>	
+		<h1>Theo Thonat</h1>
+		<hr>
+		<address>			
+			<a href="mailto:thonat.t@gmail.com">
+			<img src="icons/mail.png" class="logo" alt="MailIcon">Contact
+			</a>
+			&nbsp; &nbsp; &nbsp;
+			<a href="https://github.com/thonatt">
+			<img src="icons/logo-github.png" class="logo" alt="GithubIcon">Github
+			</a>
+			&nbsp; &nbsp; &nbsp;
+			<a href="https://www.linkedin.com/in/theo-thonat/">
+			<img src="icons/linkedin-svgrepo-com.svg" class="logo" alt="LinkedInIcon">LinkedIn
+			</a>
+		</address>
+	</header>
+		
+		
+	<main>
+	<br/>
+	<p>
+	Post doctoral researcher in computer graphics at Adobe. I completed my PhD in the <a href="https://team.inria.fr/graphdeco/">GraphDeco</a> team at Inria. 
+	</p>
+	
+	<nav>
+		<a href="#Research" title="Research" class="bouton-l">Research</a>
+		<a href="#Projects" title="Projects" class="bouton">Projects</a>
+		<a href="documents/CV_thonat_2021.pdf" title="Curriculum vitae" class="bouton-r">CV</a>
+	</nav>
+	
+	<br/>
+
+	<section>
+	<h1 id="Research">Publications</h1>
+
+	<article class="noimg">
+		<h2>Video-Based Rendering of Dynamic Stationary Environments from Unsynchronized Inputs</h2>
+		<p>
+			<i>Theo Thonat, Yagiz Aksoy, Miika Aittala, Sylvain Paris, Frédo Durand, and George Drettakis</i>, Computer Graphics Forum (Proceedings of the Eurographics Symposium on Rendering), Volume 40, Number 4 - June 2021. 
+			<br>
+			<a href="http://www-sop.inria.fr/reves/Basilic/2021/TAAPDD21/ThonatVideoBasedRenderingUnsycnhronizedInputsCGF_EGSR21_AuthorsVersion.pdf"><img class="logo" src="icons/download.svg"/>Paper</a>&nbsp;
+			<a href="http://www-sop.inria.fr/reves/Basilic/2021/TAAPDD21/ThonatVideoBased.mp4"><img class="logo" src="icons/movie.svg"/>Video</a>&nbsp;
+			<a href="http://www-sop.inria.fr/reves/Basilic/2021/TAAPDD21/"><img class="logo" src="icons/link.svg"/>Web page</a>
+		</p>
+	</article>
+
+	<article class="noimg">
+		<h2>sibr: A System for Image-Based Rendering</h2>
+		<p>
+			<i>Sebastien Bonopera, Peter Hedman, Jerome Esnault, Siddhant Prakash, Simon Rodriguez, Theo Thonat, Mehdi Benadel, Gaurav Chaurasia, Julien Philip and George Drettakis</i>, 2020, Publicly released research framework.
+			<br>
+			<a href="https://sibr.gitlabpages.inria.fr"><img class="logo" src="icons/link.svg"/>Web page</a>&nbsp;
+			<a href="https://gitlab.inria.fr/sibr/sibr_core"><img class="logo" src="icons/code.svg"/>Repository</a>&nbsp;
+			<a href="https://gitlab.inria.fr/sibr/projects"><img class="logo" src="icons/code.svg"/>Projects</a>
+		</p>
+	</article>
+
+	<article class="noimg">
+		<h2>Thin Structures in Image Based Rendering</h2>
+		<p>
+			<i>Theo Thonat, Abdelaziz Djelouah, Frédo Durand, and George Drettakis</i>, Computer Graphics Forum (Proceedings of the Eurographics Symposium on Rendering), Volume 37, Number 4, page 12 - 2018. 
+			<br>
+			<a href="http://www-sop.inria.fr/reves/Basilic/2018/TDDD18/main_thin_5.pdf"><img class="logo" src="icons/download.svg"/>Paper</a>&nbsp;
+			<a href="https://youtu.be/OyHi9Iana9Q"><img class="logo" src="icons/movie.svg"/>Video</a>&nbsp;
+			<a href="http://www-sop.inria.fr/reves/Basilic/2018/TDDD18/"><img class="logo" src="icons/link.svg"/>Web page</a>
+		</p>
+	</article>
+
+	<article class="noimg">
+		<h2>Multi-View Inpainting for Image-Based Scene Editing and Rendering</h2>
+		<p>
+			<i>Theo Thonat, Eli Shechtman, Sylvain Paris, and George Drettakis</i>, International Conference on 3D Vision (3DV) - 2016.
+			<br>
+			<a href="http://www-sop.inria.fr/reves/Basilic/2016/TSPD16/final_MVInpainting.pdf"><img class="logo" src="icons/download.svg"/>Paper</a>&nbsp;
+			<a href="https://youtu.be/_NTpE_fjlMo"><img class="logo" src="icons/movie.svg"/>Video</a>&nbsp;
+			<a href="http://www-sop.inria.fr/reves/Basilic/2016/TSPD16/"><img class="logo" src="icons/link.svg"/>Web page</a>
+		</p>
+	</article>
+
+	</section>
+	
+	<section>
+		<h1 id="Projects">Projects</h1>
+		
+		<article>
+			<a href="https://github.com/thonatt/CSL"><img src="images/csl.png"></a>
+			<h2>C++ integrated Shading Language</h2>
+			<p>
+				CSL is a C++ header-only library, self-transpiling into GLSL at runtime, allowing to write OpenGL shaders directly inside computer graphics applications code. 
+				<br>
+				<a href="https://github.com/thonatt/CSL"><img class="logo" src="icons/code.svg"/>Repository</a>
+			</p>	
+		</article>
+
+		<article>
+			<a href="https://github.com/thonatt/GLoops"><img src="images/gloops.png"></a>
+			<h2>openGL Object Oriented Programmer Starterpack</h2>
+			<p>
+				Compilation of helpers (OpenGL, ImGui, Embree) for fast and easy testing for graphics related experimentations.  
+				<br>
+				<a href="https://github.com/thonatt/GLoops"><img class="logo" src="icons/code.svg"/>Repository</a>
+			</p>	
+		</article>
+
+	</section>
+
+	</main>
+
+	<br/>
+	<p>
+		Thanks to <a href="http://simonrodriguez.fr/">Simon Rodriguez</a> for the design inspiration. 
+	</p>
+	
+	</body>
+</html>
